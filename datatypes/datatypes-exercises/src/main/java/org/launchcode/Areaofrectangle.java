@@ -9,6 +9,6 @@ public class Areaofrectangle {
         System.out.println("Enter the breadth of the rectangle");
         double breadth = inputbreadth.nextDouble();
         double area = length * breadth;
-        System.out.println("The area of the rectangle is "+area);
+        System.out.println("The area of the rectangle: "+area);
     }
 }

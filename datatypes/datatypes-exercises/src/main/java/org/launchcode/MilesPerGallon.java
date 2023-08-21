@@ -9,6 +9,6 @@ public class MilesPerGallon {
         Scanner inputgallons = new Scanner(System.in);
         float gallons = inputgallons.nextFloat();
         float milespergallons = miles/gallons;
-        System.out.println("Your miles per gallons is :"+milespergallons);
+        System.out.println("Your miles per gallons: "+milespergallons);
     }
 }

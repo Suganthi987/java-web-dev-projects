@@ -11,7 +11,7 @@ public class AliceInWonderLand {
         if (sentence.toLowerCase().contains(searchstring)){
             System.out.println("String found");
             System.out.println("The string is at location :"+ sentence.indexOf(searchstring));
-            System.out.println("The length of the string is :"+searchstring.length());
+            System.out.println("The length of the string :"+searchstring.length());
             String modifiedsentence = sentence.replace(searchstring," ");
             System.out.println(modifiedsentence);
         }
