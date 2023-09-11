@@ -52,4 +52,8 @@ public class MenuItems {
     public void setNewitem(boolean newitem) {
         this.newitem = newitem;
     }
+public void printMenuItems(MenuItems menuitems){
+    System.out.println(menuitems.name +" is a " + menuitems.category + " which is "+menuitems.description);
+}
+
 }
