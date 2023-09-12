@@ -30,7 +30,7 @@ class BalancedBracketsTest {
 
     @Test
 public void isANumber(){
-        assertThrows(IllegalArgumentException.class, () -> BalancedBrackets.hasBalancedBrackets("5"),"String must include letters,not numbers");
+        assertThrows(IllegalArgumentException.class, () -> BalancedBrackets.hasBalancedBrackets("5"),"String must include letters, not numbers");
     }
     @Test
     public void unevenBrackets(){
@@ -53,6 +53,24 @@ public void isANumber(){
     @Test
     public void reverseBracket(){
         boolean condition =  BalancedBrackets.hasBalancedBrackets("][");
+        assertFalse(condition);
+    }
+
+    @Test
+    public void stringWithMultipleUnevenBrackets(){
+        boolean condition =  BalancedBrackets.hasBalancedBrackets("[[[]]][");
+        assertFalse(condition);
+    }
+
+    @Test
+    public void stringwithMultipleEvenBrackets(){
+        boolean condition =  BalancedBrackets.hasBalancedBrackets("[[[]]]");
+        assertTrue(condition);
+    }
+
+    @Test
+    public void stringWithNoBrackets(){
+        boolean condition =  BalancedBrackets.hasBalancedBrackets("string");
         assertFalse(condition);
     }
 
